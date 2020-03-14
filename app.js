@@ -4,7 +4,7 @@ var ping = require('jjg-ping');
 
 var server = restify.createServer();
 
-server.get('/', function(req, res, next) {
+server.head('/', function(req, res, next) {
   res.send('default');
   next();
 });
